@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IoTfyAssignment</string>
+    <string name="weather_info">Weather Info</string>
+    <string name="select_city">Select city</string>
+</resources>

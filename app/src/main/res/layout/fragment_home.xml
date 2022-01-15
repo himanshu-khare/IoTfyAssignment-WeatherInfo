@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.HomeFragment">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="@dimen/dimen200dp"
+        android:layout_height="@dimen/dimen200dp"
+        android:layout_marginTop="@dimen/dimen50dp"
+        app:lottie_repeatMode="restart"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/weatherInfoTitle"
+        android:layout_width="match_parent"
+        android:layout_below="@id/lottieAnimationView"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="@string/weather_info"
+        android:fontFamily="@font/amaranth"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/weatherInfoDescription"
+        android:layout_width="match_parent"
+        android:layout_below="@id/weatherInfoTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:gravity="start"
+        android:layout_marginStart="@dimen/dimen20dp"
+        android:layout_marginEnd="@dimen/dimen20dp"
+        tools:text="Weather Info"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/loadingImage"
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:importantForAccessibility="no"
+        android:src="@drawable/loading_animation"
+        android:layout_height="200dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/selectCityBtn"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="@string/select_city"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
